@@ -10,10 +10,16 @@
 import './main.development';
 import './main.production';
 
+// Angular dependencies
 import angular from 'angular';
 import ngUIRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
-import routing from './main.config';
 
-angular.module('main', [ngUIRouter, ngResource])
+// Main routing configuration
+import routing from './main.routing';
+
+// Components
+import TodoComponent from './components/todo';
+
+angular.module('main', [ngUIRouter, ngResource, TodoComponent])
        .config(routing);

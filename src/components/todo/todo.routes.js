@@ -1,16 +1,14 @@
-routes.$inject = ['$stateProvider'];
-
 export default function routes($stateProvider) {
   $stateProvider
     .state('home', {
       url: '/',
       template: require('./todo.html'),
       controller: 'TodoController',
-      controllerAs: 'todoCtrl',
+      controllerAs: 'TodoCtrl',
       resolve: {
-        store(todoStorage) {
+        store(TodoStorage) {
           // Get the correct module (API or localStorage).
-          return todoStorage.then((module) => {
+          return TodoStorage.then((module) => {
             // Fetch the todo records in the background.
             module.get();
             return module;
@@ -19,3 +17,5 @@ export default function routes($stateProvider) {
       }
     });
 }
+
+routes.$inject = ['$stateProvider'];

@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 export default function TodoAPI($resource) {
-  var store = {
+  const store = {
     todos: [],
 
     api: $resource('/api/todos/:id', null,
@@ -11,9 +11,9 @@ export default function TodoAPI($resource) {
     ),
 
     clearCompleted() {
-      var originalTodos = store.todos.slice(0);
+      const originalTodos = store.todos.slice(0);
 
-      var incompleteTodos = store.todos.filter(function (todo) {
+      const incompleteTodos = store.todos.filter(function (todo) {
         return !todo.completed;
       });
 

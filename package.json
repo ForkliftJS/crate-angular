@@ -19,6 +19,7 @@
   "homepage": "https://github.com/forkliftjs/crate-angular#readme",
   "devDependencies": {
     "eslint-config-airbnb": "^6.2.0",
+    "estraverse-fb": "^1.3.1",
     "forkliftjs": "^0.1.4"
   },
   "dependencies": {

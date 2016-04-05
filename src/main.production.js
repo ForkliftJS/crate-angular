@@ -14,8 +14,6 @@ function initProductionEnvironment() {
     return;
   }
 
-  require('forkliftjs').initProductionEnvironment();
-
   // Add calls to `production` exclusive functions here.
 }
 

@@ -3,7 +3,7 @@
  * Directive that executes an expression when the element it is applied to gets
  * an `escape` keydown event.
  */
-export default function TodoEscape() {
+export default function todoEscape() {
   const ESCAPE_KEY = 27;
 
   return function (scope, elem, attrs) {
