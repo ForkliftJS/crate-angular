@@ -1,0 +1,12 @@
+{
+  "name": "crate-angular",
+  "description": "AngularJS crate designed to be used with ForkliftJS",
+  "version": "0.1.0",
+  "url": "https://github.com/forkliftjs/crate-angular.git",
+  "options": {
+    "paths": "./src",
+    "outdir": "./docs/api",
+    "themedir": "./docs/themes/JustBI",
+    "helpers": ["./docs/themes/JustBI/helpers/helpers.js"]
+  }
+}

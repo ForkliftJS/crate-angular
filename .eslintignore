@@ -1,0 +1,4 @@
+dist/
+vendor/
+vendor/bower/
+node_modules/
